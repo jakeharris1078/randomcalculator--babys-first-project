@@ -1,0 +1,25 @@
+body {
+  background-color: pink;
+}
+
+.resultBox {
+  border-style: dashed;
+  border-width: 1px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+
+  font-size: 75px;
+}
+
+.column {
+  flex: 25%;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  border: dotted;
+}
+
+.container {
+  display: flex;
+}

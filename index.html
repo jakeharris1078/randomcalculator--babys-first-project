@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="style.css" rel="stylesheet" />
+  <script src="script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Random Number Calculator</h1>
+    <div class="container">
+      <div class="column" id="firstNum">
+        <p>Click to generate your first three-digit number</p>
+        <button id="button1" onclick="replace1()" type="button">
+          Generate number
+        </button>
+        <p class="resultBox" id="digits1">?</p>
+      </div>
+      <div class="column" id="mathSign">
+        <p>Select an operator.</p>
+        <button id="plus" onclick="replaceOperatorPlus()">+</button>
+        <button id="minus" onclick="replaceOperatorMinus()">-</button>
+        <button id="multiply" onclick="replaceOperatorTimes()">*</button>
+        <button id="divide" onclick="replaceOperatorDivide()">/</button>
+        <p class="resultBox" id="operator">x</p>
+      </div>
+      <div class="column" id="secondNum">
+        <p>Click to generate your second three-digit number</p>
+        <button id="button2" onclick="replace2()" type="button">
+          Generate number
+        </button>
+        <p class="resultBox" id="digits2">?</p>
+      </div>
+      <div class="column" id="result">
+        <p>Click this button for the result.</p>
+        <button id="button3" type="button" onclick="mathEquation()">
+          Run the calculation
+        </button>
+        <p class="resultBox" id="resultNum">?</p>
+      </div>
+    </div>
+  </body>
+</html>
